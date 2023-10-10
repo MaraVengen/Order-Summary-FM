@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+}
+
+body {
+  background: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
+  background-position: top;
+}
+
+.container {
+  margin: 70px auto;
+  width: 320px;
+  height: 550px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.main-img {
+  width: 100%;
+  margin: auto;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.main {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 15px 0;
+  text-align: center;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+p {
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
+  color: var(--desaturated-blue);
+}
+
+.price {
+  display: flex;
+  width: 100%;
+  margin: 18px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--very-pale-blue);
+}
+
+.price a {
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.price a:hover {
+  cursor: pointer;
+  color: hsl(245, 83%, 68%);
+  text-decoration: none;
+}
+
+.price img {
+  padding-right: 10px;
+}
+
+ul {
+  margin-top: 3px;
+}
+
+li {
+  list-style-type: none;
+  padding-right: 30px;
+  padding-left: 10px;
+  padding-top: 2px;
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.prc {
+  color: var(--desaturated-blue);
+  font-weight: 400;
+}
+
+button {
+  display: block;
+  height: 45px;
+  width: 100%;
+  margin: 10px 0;
+  background-color: var(--bright-blue);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(245, 83%, 68%);
+}
+
+.btn {
+  background-color: white;
+  color: var(--desaturated-blue);
+  text-transform: capitalize;
+  box-shadow: none;
+}
+
+.btn:hover {
+  background-color: white;
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  letter-spacing: 1.5px;
+  transition: 0.4s ease;
+  color: var(--dark-blue);
+}
+
+.name {
+  font-variant: small-caps;
+  font-size: 15px;
+}
